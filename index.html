@@ -105,7 +105,7 @@
                     <a href="https://code.visualstudio.com/download">Visual Studio Code</a><br><br>macOSの場合は、ダウンロードしたファイルをダブルクリックして開き、Visual Studio Codeをアプリケーションフォルダへドラッグ＆ドロップします。<br><br>Windowsの場合は、Installerをダウンロードすることをおすすめします。<br>使用しているパソコンがあなたが占有しているものなら、System
                     Installerを、複数の人で共有しているのなら、User Installerをダウンロードします。<br>ダウンロードしたInstallerを起動し、指示に従ってインストールします。<br></p>
                 <li>Emmetのlang設定</li>
-                <p>Emmetの具体的な例の2.で紹介しましたコードの2行目が、<br><pre><code>&lt;html lang="en"&gt;</code></pre>になっています。<br>これは、HTMLの言語設定を英語にする、ということなのですが、<br>日本語用のHTMLを記述する場合、この部分を毎回、<pre><code>&lt;html lang="ja"&gt;</code></pre>に手動で書き換える必要があります。<br>ここでは、VSCodeの設定にEmmetの変数を指定することで、自動で<pre><code>&lt;html lang="ja"&gt;</s></code></pre><s>にする方法を紹介します。<br><br>（lang=Languageの略、en=Englishの略、ja=Japaneseの略）<br><br>VSCodeを起動してmacOSの場合は、メニューのCode→Preferences→Settings、<br>Windowsの場合は、メニューのFile→Preferences→Settingsを選択します。<br>検索欄に
+                <p>Emmetの具体的な例の2.で紹介しましたコードの2行目が、<br><pre><code>&lt;html lang="en"&gt;</code></pre>になっています。<br>これは、HTMLの言語設定を英語にする、ということなのですが、<br>日本語用のHTMLを記述する場合、この部分を毎回、<pre><code>&lt;html lang="ja"&gt;</code></pre>に手動で書き換える必要があります。<br>ここでは、VSCodeの設定にEmmetの変数を指定することで、自動で<pre><code>&lt;html lang="ja"&gt;</code></pre>にする方法を紹介します。<br><br>（lang=Languageの略、en=Englishの略、ja=Japaneseの略）<br><br>VSCodeを起動してmacOSの場合は、メニューのCode→Preferences→Settings、<br>Windowsの場合は、メニューのFile→Preferences→Settingsを選択します。<br>検索欄に
                     variables と入力します。<br>少し下にスクロールすると出てくる<u>Edit settings.json</u>をクリックして<a href="https://ja.wikipedia.org/wiki/JavaScript_Object_Notation">JSON</a>ファイルを開きます。<br>ファイルに何も書かれていない場合は次のコードをコピー＆ペーストしてファイルを保存します。<br><pre><code>{  // Emmetの言語変数を日本語に
   "emmet.variables": {
     "Lang": "ja"
